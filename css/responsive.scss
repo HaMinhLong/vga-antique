@@ -1,0 +1,449 @@
+// RESPONSIVE PAGE 1920PX AND LESS
+@media (max-width: 1920px) {
+  header,
+  .navigation,
+  .product-portfolio-home,
+  .new-products-home,
+  .promotional-products-home,
+  .most-bought-products-home,
+  .articles-home,
+  .products-page,
+  .product-details-page,
+  .about-we-page,
+  .articles-page,
+  .article-details-page,
+  .pay-page {
+    padding-right: 374.5px;
+    padding-left: 375.5px;
+  }
+  header {
+    padding-left: 391.5px;
+  }
+  footer {
+    .part-1,
+    .part-2 {
+      padding-right: 374.5px;
+      padding-left: 375.5px;
+    }
+  }
+}
+
+// RESPONSIVE PAGE 1680PX AND LESS
+@media (max-width: 1680px) {
+  header,
+  .navigation,
+  .product-portfolio-home,
+  .new-products-home,
+  .promotional-products-home,
+  .most-bought-products-home,
+  .articles-home,
+  .products-page,
+  .product-details-page,
+  .about-we-page,
+  .articles-page,
+  .article-details-page,
+  .pay-page {
+    padding-right: 254.5px;
+    padding-left: 255.5px;
+  }
+  header {
+    padding-left: 268.5px;
+  }
+  footer {
+    .part-1,
+    .part-2 {
+      padding-right: 254.5px;
+      padding-left: 255.5px;
+    }
+  }
+}
+
+// RESPONSIVE PAGE 1550px AND LESS
+@media (max-width: 1550px) {
+  header,
+  .navigation,
+  .product-portfolio-home,
+  .new-products-home,
+  .promotional-products-home,
+  .most-bought-products-home,
+  .articles-home,
+  .products-page,
+  .product-details-page,
+  .about-we-page,
+  .articles-page,
+  .article-details-page,
+  .pay-page {
+    padding-right: 174px;
+    padding-left: 175px;
+  }
+  header {
+    padding-left: 188px;
+  }
+  footer {
+    .part-1,
+    .part-2 {
+      padding-right: 174px;
+      padding-left: 175px;
+    }
+  }
+}
+
+// RESPONSIVE PAGE 1440PX AND LESS
+@media (max-width: 1440px) {
+  header,
+  .navigation,
+  .product-portfolio-home,
+  .new-products-home,
+  .promotional-products-home,
+  .most-bought-products-home,
+  .articles-home,
+  .products-page,
+  .product-details-page,
+  .about-we-page,
+  .articles-page,
+  .article-details-page,
+  .pay-page {
+    padding-right: 134.5px;
+    padding-left: 135.5px;
+  }
+  header {
+    padding-left: 148.5px;
+  }
+  footer {
+    .part-1,
+    .part-2 {
+      padding-right: 134.5px;
+      padding-left: 135.5px;
+    }
+  }
+}
+
+// RESPONSIVE PAGE 1024PX AND LESS
+@media (max-width: 1024px) {
+  header,
+  .navigation,
+  .product-portfolio-home,
+  .new-products-home,
+  .promotional-products-home,
+  .most-bought-products-home,
+  .articles-home,
+  .products-page,
+  .product-details-page,
+  .about-we-page,
+  .articles-page,
+  .article-details-page,
+  .pay-page {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .new-products-home {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+  // FOOTER
+  footer {
+    .part-1,
+    .part-2 {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+
+  p,
+  a,
+  .description {
+    font-size: 14px;
+  }
+  .main-title,
+  .portfolio-title {
+    font-size: 22px;
+  }
+  .product-title,
+  .title,
+  .article-title-home {
+    font-size: 16px;
+  }
+  .article-title {
+    font-size: 18px;
+  }
+  .bread-crumb {
+    .content {
+      p {
+        font-size: 34px;
+      }
+    }
+  }
+  .pagination {
+    ul {
+      li {
+        height: 27px;
+        width: 27px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  // HEADER
+  header {
+    padding-left: 48px;
+    .search-box {
+      width: 180px;
+    }
+    .more-information {
+      width: 420px;
+      .open-hours,
+      .hotline,
+      .cart {
+        .content {
+          p {
+            &:nth-child(2) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // BANNER
+  .banner-home {
+    p {
+      font-size: 42px;
+    }
+  }
+
+  // PRODUCT PORTFOLIO HOME
+  .product-portfolio-home {
+    .product-portfolio-list {
+      .product-portfolio {
+        padding-right: 15px;
+        padding-left: 30px;
+        .image-box {
+          height: 180px;
+        }
+      }
+    }
+  }
+
+  // NEWS PRODUCT
+  .new-products-home {
+    .new-products-list {
+      .new-product {
+        .image-box {
+          height: 180px;
+          img {
+            &:nth-child(2) {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // PROMOTIONAL PRODUCTS
+  .promotional-products-home,
+  .most-bought-products-home {
+    .promotional-products-list,
+    .most-bought-products-list {
+      .promotional-product,
+      .most-bought-product {
+        .image-box {
+          height: 170px;
+        }
+      }
+    }
+  }
+
+  // FOOTER
+  footer {
+    .part-1 {
+      height: 70px;
+      .first,
+      .second,
+      .third,
+      .fourth {
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 20px;
+        }
+        p {
+          width: 75%;
+        }
+      }
+    }
+    .part-2 {
+      .title {
+        font-size: 15px;
+      }
+      .customer-support-box,
+      .shopping-guide-box {
+        .customer-support-list,
+        .shopping-guide-list {
+          li {
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        img {
+          height: 55px;
+          margin-top: 0px;
+        }
+      }
+      .sign-up-box {
+        .description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  //                                           PRODUCTS PAGE
+  .products-page {
+    .left-side {
+      .product-portfolio {
+        .portfolio-list {
+          li {
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .other-products {
+        .product {
+          .image-box {
+            height: 80px;
+          }
+          .content {
+            .title {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .products-box {
+      .products-list {
+        .product-item {
+          .image-box {
+            height: 220px;
+            img {
+              &:nth-child(2) {
+                width: 35px;
+                height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //                                   PRODUCT DETAILS PAGE
+  .product-details-page {
+    .product-details {
+      .image-box {
+        .image-list {
+          li {
+            height: 60px;
+          }
+        }
+      }
+      .content {
+        .price {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .product-descriptions {
+      .descriptions-box {
+        .descriptions {
+          .description {
+            margin-top: 10px;
+          }
+        }
+      }
+      .video-box {
+        width: 45%;
+        .video {
+          height: 320px;
+        }
+      }
+    }
+
+    .related-products {
+      .related-product {
+        .image-box {
+          height: 180px;
+        }
+      }
+    }
+  }
+
+  //                                           ABOUT WE PAGE
+  .about-we-page {
+    .reasons-to-choose-us-box {
+      > .image-box {
+        height: 380px;
+      }
+      .reasons-to-choose-us {
+        width: 50%;
+        .reason {
+          .content {
+            .title {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //                                   ARTICLES DETAILS PAGE
+  .article-details-page {
+    .article-details {
+      .article-title {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// RESPONSIVE PAGE 768PX AND LESS
+@media (max-width: 768px) {
+  header,
+  .navigation,
+  .product-portfolio-home,
+  .new-products-home,
+  .promotional-products-home,
+  .most-bought-products-home,
+  .articles-home,
+  .products-page,
+  .product-details-page,
+  .about-we-page,
+  .articles-page,
+  .article-details-page,
+  .pay-page {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .new-products-home {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+  // FOOTER
+  footer {
+    .part-1,
+    .part-2 {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+}
