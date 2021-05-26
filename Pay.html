@@ -52,16 +52,42 @@
     </header>
 
     <section class="navigation">
+      <img
+        src="./images/home/nav-res.svg"
+        alt=""
+        class="nav-res"
+        onclick="toggleNav()"
+      />
+      <div class="search-box-res">
+        <form>
+          <img src="./images/home/search.svg" alt="" />
+          <input type="text" placeholder="Từ khóa cần tìm" />
+        </form>
+      </div>
+      <div class="cart-box-res">
+        <img src="./images/home/cart-res.svg" alt="" />
+        <p>1</p>
+      </div>
       <div class="product-portfolio-nav">
         <img src="./images/home/portfolio.svg" alt="" />
         <p>danh mục sản phẩm</p>
       </div>
       <ul class="menu-list">
-        <li><a href="./index.html">trang chủ</a></li>
-        <li><a href="./AboutWe.html">về chúng tôi</a></li>
-        <li><a href="./Articles.html">tin tức</a></li>
-        <li><a href="#">tuyển dụng</a></li>
-        <li><a href="#">liên hệ</a></li>
+        <div class="nav-logo-res">
+          <a href="./index.html">
+            <img src="./images/home/header-logo-1.svg" alt="" />
+            <img src="./images/home/header-logo-2.svg" alt="" />
+          </a>
+        </div>
+        <li class="nav-item"><a href="./index.html">trang chủ</a></li>
+        <li class="nav-item products-item-nav">
+          <a href="./Products.html">sản phẩm</a
+          ><img src="./images/home/bottom-nav.svg" alt="" />
+        </li>
+        <li class="nav-item"><a href="./AboutWe.html">về chúng tôi</a></li>
+        <li class="nav-item"><a href="./Articles.html">tin tức</a></li>
+        <li class="nav-item"><a href="#">tuyển dụng</a></li>
+        <li class="nav-item"><a href="#">liên hệ</a></li>
       </ul>
     </section>
 
@@ -78,6 +104,17 @@
     </section>
 
     <section class="pay-page">
+      <div class="noti-order-success">
+        <div class="icon-box">
+          <img src="./images/pay/circle.svg" alt="" />
+          <img src="./images/pay/check.svg" alt="" />
+        </div>
+        <p>
+          Chúng tôi đã nhận được thông tin và sẽ liên hệ bạn trong thời gian sớm
+          nhất
+        </p>
+        <button>OK</button>
+      </div>
       <div class="pay-information">
         <div class="customer-information">
           <p class="information-title">Thông tin giao hàng</p>
@@ -207,9 +244,83 @@
             </div>
           </form>
         </div>
+        <button>Đặt hàng</button>
       </div>
       <div class="cart-details">
         <p class="information-title">Thông tin giở hàng</p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Sản phẩm</th>
+              <th>Số lượng</th>
+              <th>Giá</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div><img src="./images/pay/delete.svg" alt="" /></div>
+              </td>
+              <td>
+                <img src="./images/home/promotional-1.png" alt="" />
+                <div>
+                  <p>Quả cầu Phong thủy đá Obsidian đỏ</p>
+                  <p class="price">1.800.000 ₫</p>
+                </div>
+              </td>
+              <td><input type="number" value="1" /></td>
+              <td>1.800.000 ₫</td>
+            </tr>
+            <tr>
+              <td>
+                <div><img src="./images/pay/delete.svg" alt="" /></div>
+              </td>
+              <td>
+                <img src="./images/home/promotional-2.png" alt="" />
+                <div>
+                  <p>Quả cầu Phong thủy đá Obsidian đỏ</p>
+                  <p class="price">1.800.000 ₫</p>
+                </div>
+              </td>
+              <td><input type="number" value="1" /></td>
+              <td>1.800.000 ₫</td>
+            </tr>
+            <tr>
+              <td>
+                <div><img src="./images/pay/delete.svg" alt="" /></div>
+              </td>
+              <td>
+                <img src="./images/home/promotional-3.png" alt="" />
+                <div>
+                  <p>Quả cầu Phong thủy đá Obsidian đỏ</p>
+                  <p class="price">1.800.000 ₫</p>
+                </div>
+              </td>
+              <td><input type="number" value="1" /></td>
+              <td>1.800.000 ₫</td>
+            </tr>
+            <tr>
+              <td>
+                <div><img src="./images/pay/delete.svg" alt="" /></div>
+              </td>
+              <td>
+                <img src="./images/home/promotional-4.png" alt="" />
+                <div>
+                  <p>Quả cầu Phong thủy đá Obsidian đỏ</p>
+                  <p class="price">1.800.000 ₫</p>
+                </div>
+              </td>
+              <td><input type="number" value="1" /></td>
+              <td>1.800.000 ₫</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="total-price">
+          <p>Tổng cộng</p>
+          <p class="price">7.200.000 ₫</p>
+        </div>
+        <button>Đăt hàng</button>
       </div>
     </section>
 
@@ -244,19 +355,28 @@
           <div class="contact-box">
             <div class="phone">
               <img src="./images/home/phone.svg" alt="" />
-              <p>0888755088</p>
+              <p><span>Hotline: </span>0888755088</p>
             </div>
+
             <div class="address">
               <img src="./images/home/address.svg" alt="" />
               <p>
+                <span>Địa chỉ: </span>
                 Phòng 501 Tòa nhà Vinahud, đường trung yên 9, KĐT Trung Yên,
                 Trung Hòa, Cầu giấy
               </p>
             </div>
+
+            <div class="phone res">
+              <img src="./images/home/phone.svg" alt="" />
+              <p><span>Hotline: </span>0888755088</p>
+            </div>
+
             <div class="email">
               <img src="./images/home/email.svg" alt="" />
-              <p>contact@vga.vn</p>
+              <p><span>Email: </span>contact@vga.vn</p>
             </div>
+            <img src="./images/home/safe.png" alt="" />
           </div>
         </div>
 
@@ -273,13 +393,13 @@
               <a href="#">Tin tức sự kiện</a>
             </li>
           </ul>
-          <p class="title">Chứng nhận an toàn</p>
+          <p class="title res">Chứng nhận an toàn</p>
           <img src="./images/home/safe.png" alt="" />
         </div>
 
         <div class="shopping-guide-box">
           <p class="title">Hướng dẫn mua hàng</p>
-          <ulq class="shopping-guide-list">
+          <ul class="shopping-guide-list">
             <li>
               <a href="#">Chính sách mua hàng</a>
             </li>
@@ -292,7 +412,12 @@
             <li>
               <a href="#">Chính sách bảo hành</a>
             </li>
-          </ulq>
+          </ul>
+        </div>
+
+        <div class="footer-logo res">
+          <img src="./images/home/header-logo-1.svg" alt="" />
+          <img src="./images/home/header-logo-2.svg" alt="" />
         </div>
 
         <div class="sign-up-box">
@@ -303,6 +428,9 @@
           <form>
             <input type="text" placeholder="Email của bạn" />
             <input type="submit" value="ĐĂNG KÝ" />
+            <button>
+              <img src="./images/home/to-right-footer.svg" alt="" />
+            </button>
           </form>
           <div class="link-box">
             <a target="_blank" href="https://vgasoft.vn/">
@@ -319,5 +447,7 @@
       </div>
       <p>© 1993 - 2020 NBM Media. All rights reserved.</p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

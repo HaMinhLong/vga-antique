@@ -52,16 +52,42 @@
     </header>
 
     <section class="navigation">
+      <img
+        src="./images/home/nav-res.svg"
+        alt=""
+        class="nav-res"
+        onclick="toggleNav()"
+      />
+      <div class="search-box-res">
+        <form>
+          <img src="./images/home/search.svg" alt="" />
+          <input type="text" placeholder="Từ khóa cần tìm" />
+        </form>
+      </div>
+      <div class="cart-box-res">
+        <img src="./images/home/cart-res.svg" alt="" />
+        <p>1</p>
+      </div>
       <div class="product-portfolio-nav">
         <img src="./images/home/portfolio.svg" alt="" />
         <p>danh mục sản phẩm</p>
       </div>
       <ul class="menu-list">
-        <li><a href="./index.html">trang chủ</a></li>
-        <li><a href="./AboutWe.html">về chúng tôi</a></li>
-        <li><a href="./Articles.html">tin tức</a></li>
-        <li><a href="#">tuyển dụng</a></li>
-        <li><a href="#">liên hệ</a></li>
+        <div class="nav-logo-res">
+          <a href="./index.html">
+            <img src="./images/home/header-logo-1.svg" alt="" />
+            <img src="./images/home/header-logo-2.svg" alt="" />
+          </a>
+        </div>
+        <li class="nav-item"><a href="./index.html">trang chủ</a></li>
+        <li class="nav-item products-item-nav">
+          <a href="./Products.html">sản phẩm</a
+          ><img src="./images/home/bottom-nav.svg" alt="" />
+        </li>
+        <li class="nav-item"><a href="./AboutWe.html">về chúng tôi</a></li>
+        <li class="nav-item"><a href="./Articles.html">tin tức</a></li>
+        <li class="nav-item"><a href="#">tuyển dụng</a></li>
+        <li class="nav-item"><a href="#">liên hệ</a></li>
       </ul>
     </section>
 
@@ -83,7 +109,9 @@
       <div class="article-details">
         <p class="article-title">Bùng nổ khuyến mại - sắm tết đón xuân</p>
         <div class="date-box">
+          <img src="./images/article details/clock-icon.svg" alt="" />
           <p class="date">15:38 25/01/2021</p>
+          <img src="./images/article details/author.svg" alt="" />
           <img src="./images/articles/person.svg" alt="" />
           <p class="author">Quang Hà</p>
         </div>
@@ -233,5 +261,7 @@
       </div>
       <p>© 1993 - 2020 NBM Media. All rights reserved.</p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

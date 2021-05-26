@@ -52,16 +52,42 @@
     </header>
 
     <section class="navigation">
+      <img
+        src="./images/home/nav-res.svg"
+        alt=""
+        class="nav-res"
+        onclick="toggleNav()"
+      />
+      <div class="search-box-res">
+        <form>
+          <img src="./images/home/search.svg" alt="" />
+          <input type="text" placeholder="Từ khóa cần tìm" />
+        </form>
+      </div>
+      <div class="cart-box-res">
+        <img src="./images/home/cart-res.svg" alt="" />
+        <p>1</p>
+      </div>
       <div class="product-portfolio-nav">
         <img src="./images/home/portfolio.svg" alt="" />
         <p>danh mục sản phẩm</p>
       </div>
       <ul class="menu-list">
-        <li><a href="./index.html">trang chủ</a></li>
-        <li><a href="./AboutWe.html">về chúng tôi</a></li>
-        <li><a href="./Articles.html">tin tức</a></li>
-        <li><a href="#">tuyển dụng</a></li>
-        <li><a href="#">liên hệ</a></li>
+        <div class="nav-logo-res">
+          <a href="./index.html">
+            <img src="./images/home/header-logo-1.svg" alt="" />
+            <img src="./images/home/header-logo-2.svg" alt="" />
+          </a>
+        </div>
+        <li class="nav-item"><a href="./index.html">trang chủ</a></li>
+        <li class="nav-item products-item-nav">
+          <a href="./Products.html">sản phẩm</a
+          ><img src="./images/home/bottom-nav.svg" alt="" />
+        </li>
+        <li class="nav-item"><a href="./AboutWe.html">về chúng tôi</a></li>
+        <li class="nav-item"><a href="./Articles.html">tin tức</a></li>
+        <li class="nav-item"><a href="#">tuyển dụng</a></li>
+        <li class="nav-item"><a href="#">liên hệ</a></li>
       </ul>
     </section>
 
@@ -138,6 +164,9 @@
       </div>
       <p class="main-title">Sản phẩm mới</p>
       <div class="new-products-list">
+        <div class="to-left">
+          <img src="./images/home/new-product-to-left.svg" alt="" />
+        </div>
         <div class="new-product">
           <div class="image-box">
             <a href="./ProductDetails.html">
@@ -147,8 +176,8 @@
           </div>
           <div class="content">
             <p class="product-title">Ấn Rồng Ngọc Hoàng Long 15cm</p>
-            <p class="product-code">Mã sản phẩm: 2001/MA</p>
-            <p class="price-color">84.600.000 ₫</p>
+            <p class="product-code res">Mã sản phẩm: 2001/MA</p>
+            <p class="price-color res">84.600.000 ₫</p>
           </div>
         </div>
 
@@ -159,8 +188,8 @@
           </div>
           <div class="content">
             <p class="product-title">Ấn Rồng Ngọc Hoàng Long 15cm</p>
-            <p class="product-code">Mã sản phẩm: 2001/MA</p>
-            <p class="price-color">84.600.000 ₫</p>
+            <p class="product-code res">Mã sản phẩm: 2001/MA</p>
+            <p class="price-color res">84.600.000 ₫</p>
           </div>
         </div>
 
@@ -171,8 +200,8 @@
           </div>
           <div class="content">
             <p class="product-title">Ấn Rồng Ngọc Hoàng Long 15cm</p>
-            <p class="product-code">Mã sản phẩm: 2001/MA</p>
-            <p class="price-color">84.600.000 ₫</p>
+            <p class="product-code res">Mã sản phẩm: 2001/MA</p>
+            <p class="price-color res">84.600.000 ₫</p>
           </div>
         </div>
 
@@ -185,9 +214,13 @@
           </div>
           <div class="content">
             <p class="product-title">Ấn Rồng Ngọc Hoàng Long 15cm</p>
-            <p class="product-code">Mã sản phẩm: 2001/MA</p>
-            <p class="price-color">84.600.000 ₫</p>
+            <p class="product-code res">Mã sản phẩm: 2001/MA</p>
+            <p class="price-color res">84.600.000 ₫</p>
           </div>
+        </div>
+
+        <div class="to-right">
+          <img src="./images/home/new-product-to-right.svg" alt="" />
         </div>
       </div>
     </section>
@@ -327,6 +360,7 @@
             <p class="price-color">84.600.000 ₫</p>
           </div>
         </div>
+        <a href="#" class="see-more">Xem thêm </a>
       </div>
     </section>
 
@@ -447,6 +481,7 @@
             <p class="price-color">84.600.000 ₫</p>
           </div>
         </div>
+        <a href="#" class="see-more">Xem thêm </a>
       </div>
     </section>
 
@@ -516,6 +551,7 @@
             </p>
           </div>
         </div>
+        <a href="#" class="see-more">Xem thêm </a>
       </div>
     </section>
 
@@ -550,19 +586,28 @@
           <div class="contact-box">
             <div class="phone">
               <img src="./images/home/phone.svg" alt="" />
-              <p>0888755088</p>
+              <p><span>Hotline: </span>0888755088</p>
             </div>
+
             <div class="address">
               <img src="./images/home/address.svg" alt="" />
               <p>
+                <span>Địa chỉ: </span>
                 Phòng 501 Tòa nhà Vinahud, đường trung yên 9, KĐT Trung Yên,
                 Trung Hòa, Cầu giấy
               </p>
             </div>
+
+            <div class="phone res">
+              <img src="./images/home/phone.svg" alt="" />
+              <p><span>Hotline: </span>0888755088</p>
+            </div>
+
             <div class="email">
               <img src="./images/home/email.svg" alt="" />
-              <p>contact@vga.vn</p>
+              <p><span>Email: </span>contact@vga.vn</p>
             </div>
+            <img src="./images/home/safe.png" alt="" />
           </div>
         </div>
 
@@ -579,7 +624,7 @@
               <a href="#">Tin tức sự kiện</a>
             </li>
           </ul>
-          <p class="title">Chứng nhận an toàn</p>
+          <p class="title res">Chứng nhận an toàn</p>
           <img src="./images/home/safe.png" alt="" />
         </div>
 
@@ -601,6 +646,11 @@
           </ul>
         </div>
 
+        <div class="footer-logo res">
+          <img src="./images/home/header-logo-1.svg" alt="" />
+          <img src="./images/home/header-logo-2.svg" alt="" />
+        </div>
+
         <div class="sign-up-box">
           <p class="title">Đăng ký nhận tin</p>
           <p class="description">
@@ -609,6 +659,9 @@
           <form>
             <input type="text" placeholder="Email của bạn" />
             <input type="submit" value="ĐĂNG KÝ" />
+            <button>
+              <img src="./images/home/to-right-footer.svg" alt="" />
+            </button>
           </form>
           <div class="link-box">
             <a target="_blank" href="https://vgasoft.vn/">
@@ -625,5 +678,7 @@
       </div>
       <p>© 1993 - 2020 NBM Media. All rights reserved.</p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
